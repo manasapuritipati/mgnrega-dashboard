@@ -1,0 +1,199 @@
+/* ====== General Reset ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #eaf3ff, #d7e9ff);
+  color: #333;
+  min-height: 100vh;
+}
+
+/* ====== Dashboard Page ====== */
+.dashboard-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 120px;
+  text-align: center;
+}
+
+
+.dashboard-title {
+  
+  font-size: 1.8rem;
+  color: #0056d6;
+  font-weight: 700;
+  margin-bottom: 40px;
+  letter-spacing: 0.5px;
+}
+
+/* ====== Filter Section (State + District Dropdowns) ====== */
+.filter-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px 25px;
+  box-shadow: 0 4px 15px rgba(0, 85, 204, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.filter-section:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 85, 204, 0.15);
+}
+
+/* Labels */
+.filter-section label {
+  font-weight: 600;
+  color: #222;
+}
+
+/* Dropdowns */
+.filter-section select {
+  padding: 6px 10px;
+  border: 1px solid #c8d6ff;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  background: #f9fbff;
+  color: #333;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.filter-section select:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+/* ====== Message Text ====== */
+.message-text {
+  margin-top: 20px;
+  font-size: 0.95rem;
+  color: #333;
+  letter-spacing: 0.3px;
+}
+
+/* ====== Data Display Section ====== */
+.data-display {
+  background: #ffffff;
+  margin-top: 30px;
+  padding: 25px 35px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 102, 255, 0.1);
+  max-width: 400px;
+  width: 90%;
+  text-align: left;
+  animation: fadeIn 0.8s ease;
+}
+
+.data-display h3 {
+  color: #0056d6;
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.data-display p {
+  font-size: 1rem;
+  margin: 6px 0;
+  color: #222;
+}
+
+/* ====== Animation ====== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ====== Responsive ====== */
+@media (max-width: 768px) {
+  .dashboard-page {
+    padding-top: 100px;
+  }
+
+  .filter-section {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .data-display {
+    width: 95%;
+  }
+}
+
+.data-display pre {
+  background-color: #f4f8ff;
+  padding: 15px;
+  border-radius: 6px;
+  overflow-x: auto;
+  color: #1a1a1a;
+  font-family: "Courier New", monospace;
+  font-size: 0.95rem;
+}
+.data-display code {
+  color: #0056d6;
+}
+.footer {
+  background-color: #0056d6;
+  color: #fff;
+  text-align: center;
+  padding: 12px 0;
+  position: fixed;  
+  bottom: 0;
+  width: 100%;
+  z-index: 1000;
+  left: 0;
+  font-size: 0.9rem;
+  letter-spacing: 0.3px;
+}
+.footer a {
+  color: #fff;
+  text-decoration: underline;
+  font-weight: bold;
+}
+.footer a:hover {
+  text-decoration: none;
+  color: #cce0ff;
+}
+.footer .highlight {
+  background-color: #0041a3;
+  padding: 2px 6px;
+  border-radius: 4px;
+  position: relative;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 1000;
+  left: 0;
+  font-size: 0.9rem;
+  letter-spacing: 0.3px;
+}
+.footer .highlight:hover {
+  background-color: #003080;
+}
+.footer .highlight a {
+  color: #fff;
+  text-decoration: underline;
+  font-weight: bold;
+}
+.footer .highlight a:hover {
+  text-decoration: none;
+  color: #cce0ff;
+}
+

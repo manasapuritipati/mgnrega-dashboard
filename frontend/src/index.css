@@ -1,0 +1,36 @@
+/* Dashboard.css */
+
+.dashboard-container {
+  background: linear-gradient(135deg, #e0f2fe, #f9fafb);
+  min-height: 100vh;
+  padding: 40px 0;
+}
+
+.dashboard-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #2563eb;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.data-card {
+  background: white;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.data-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.data-card pre {
+  background-color: #f1f5f9;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  overflow-x: auto;
+  color: #1e293b;
+  font-family: "Fira Code", monospace;
+  font-size: 0.95rem;
+}
