@@ -1,0 +1,13 @@
+{
+  "name": "mgnrega-backend",
+  "version": "1.0.0",
+  "description": "MGNREGA Dashboard Backend API",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": ["mgnrega", "api", "backend"],
+  "author": "",
+  "license": "ISC"
+}
